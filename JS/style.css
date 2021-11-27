@@ -1,0 +1,45 @@
+.quiz {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+}
+.quiz__question {
+    padding: 10px;
+    font-size: 2rem;
+}
+.question {
+}
+.quiz__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choices__choice {
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    border-left: 10px solid lightblue;
+    margin: 0 0 10px 0;
+}
+.choice {
+    font-size: 1.5rem;
+
+}
+
+.choices__choice::before{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    transition: all .3s;
+}
+
+.choices__choice.true::before{
+     background-color: green;
+    
+}
+
+.choices__choice.false::before{
+    background-color: red;
+   
+}
